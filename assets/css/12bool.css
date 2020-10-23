@@ -1,0 +1,86 @@
+/* debug */
+.debug [class*="col-"]{
+  height: auto;
+  background-color: lightgreen;
+  border: 1px solid black;
+}
+/* /debug */
+
+/* reset */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* reset */
+
+
+/* container */
+.container::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+/* /container */
+
+
+/* utility classes */
+[class*="col-"]{
+  float: left;
+}
+/* /utility classes */
+
+
+/* colonne */
+.col-1{
+  width: calc((100%/12) * 1)
+}
+.col-2{
+  width: calc((100%/12) * 2)
+}
+.col-3{
+  width: calc((100%/12) * 3)
+}
+.col-4{
+  width: calc((100%/12) * 4)
+}
+.col-5{
+  width: calc((100%/12) * 5)
+}
+.col-6{
+  width: calc((100%/12) * 6)
+}
+.col-7{
+  width: calc((100%/12) * 7)
+}
+.col-8{
+  width: calc((100%/12) * 8)
+}
+.col-9{
+  width: calc((100%/12) * 9)
+}
+.col-10{
+  width: calc((100%/12) * 10)
+}
+.col-11{1
+  width: calc((100%/12) * 11)
+}
+.col-12{
+  width: calc((100%/12) * 12)
+}
+/* colonne */
+
+
+
+.col-1, .col-12, .col-8, .col-2, .col-6{
+  text-align: center;
+  line-height: 200px;
+  font-size: 14px;
+}
+.special{
+  padding: 10px;
+}
+.col-6 .nested{
+  background-color: orange;
+  border: 1px solid white;
+}
